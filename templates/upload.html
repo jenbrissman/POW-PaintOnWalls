@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+<form class="upload-art" class="form-horizontal" id="upload-art" enctype="multipart/form-data">
+<div>
+    <div class="form-group row">
+      <input class="form-control googlemap" type="text" id="autocomplete"  name="location" placeholder="Location" onFocus="geolocate()">
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDcP6fsj7ftfBIOCURqi2KOSc9kKM51Crs&libraries=places&callback=initAutocomplete" async defer></script>
+    </div>
+  
+    <div id="image-uploader">
+      <ul id="list"></ul>
+    </div>
+  
+    <div>
+      <button class="btn btn-light image-btn" input id="add-image" type="button" name="add-image" value="Add image">+ Image</button>
+    </div>
+  
+    <button id="submit-btn" class="btn btn-light btn-block submit-btn" type="submit" value="SUBMIT" name="submit">SUBMIT</button>
+  </form>
+</div>
+  
+  <script>
+    const listAddButton = $('#add-image')
+    let click_counter = 0
+      const addItem = () => {
+          click_counter++
+          $('#list').append(`<li class="add-image">
+          <input type="text" class="form-control image-input" id="image-title-${click_counter}" name="image-title" placeholder="Image Title"/>
+          <div id="image-uploader">
+            <label class="custom-file-upload">
+            <input type="file" id="image-files-${click_counter}" name="filesToUpload[]" multiple>
+            </label>
+          </div></li>`)
+      }
+    listAddButton.on('click', addItem)
+  </script>
+  {% endblock %}

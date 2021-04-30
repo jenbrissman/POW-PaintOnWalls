@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% block nav %} {% endblock %}
+
+<h4 id="response"></h4> 
+<div id="display-message"></div>
+
+<div id="bg">
+<img src="static/images/PowHome.jpg" id="bg" alt="Homepage Image">
+</div>
+
+<div class="login-page">
+    <div class="home-form">
+
+        <form class="register-form" id="register-form">
+            <input type="text" id="first_name" placeholder="First Name"/>
+            <input type="text" id="last_name" placeholder="Last Name"/>
+            <input type="text" id="email" placeholder="Email"/>
+            <input type="text" id="password" placeholder="Password"/>
+            <input class="register-submit" type="submit"/>
+            <p class="message"> Already Registered? <a href="#"> Login </a> </p>
+        </form>
+
+        <form class="login-form" id="login-form" action="/login" method="POST">
+            <input type="text" id="login_email" placeholder="Email" name="email"/>
+            <input type="password" id="login_password" placeholder="Password" name="password"/>
+            <button class="login-button">Login</button>
+            <p class="message"> Not registered? <a href='#'> Register </a></p>
+        </form>
+    </div>
+</div>
+
+{% endblock %}

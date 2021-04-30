@@ -1,0 +1,228 @@
+/* ######################################SITE WIDE########################################### */
+
+/* overrides accessibility features */
+input:focus, textarea:focus, select:focus{
+  outline: none;
+}
+
+/* sets font for whole website */
+* {
+  font-family: 'Spartan';
+}
+
+/* ######################################NAV BAR########################################### */
+
+/* nav bar styling */
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: white;
+  font-family: 'Spartan';font-size: 22px !important;
+  }
+
+.navbar{
+  padding: 1.5rem 2.5rem; 
+}
+  
+  /* size for nav bar */
+body {
+  font-size: 1.6rem;
+  }
+  
+/* ######################################HOME PAGE########################################### */
+
+/* aligns homepage background image */
+#bg {
+  position: fixed;
+  top: -96px;
+  left: 310px;
+  min-width: 39%;
+  min-height: 69%;
+}
+
+.login-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.login-page .home-form {
+  margin-bottom: 220px;
+  margin-right: 100px;
+}
+
+.home-form {
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+  text-align: center;
+}
+
+.table .feed {
+  position: relative;
+  z-index: 1;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+}
+
+.home-form input {
+  outline: 1;
+  background: pink;
+  width: 100%;
+  border: 0;
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+.home-form button {
+  text-transform: uppercase;
+  outline: 0;
+  background: white;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: pink;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.home-form button:hover, .form button:active {
+  background: pink;
+  color: orangered;
+}
+
+.register-submit{
+  background: pink;
+  color: orangered;
+  text-transform: uppercase;
+  outline: 0;
+  background: orange;
+  width: 100%;
+  border: 0;
+  padding: 10px;
+  color: orangered;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.home-form .message {
+  margin: 15px 0 0;
+  color: rgba(255, 255, 255, 0.311);
+  font-size: 12px;
+}
+
+.home-form .message a {
+  color: rgb(189, 218, 190);
+  text-decoration: none;
+}
+
+#register-form {
+  display: none;
+}
+
+.login-button {
+  font: bold 11px;
+  text-decoration: none;
+  background-color: pink;
+  color: pink;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid #CCCCCC;
+  border-right: 1px solid #333333;
+  border-bottom: 1px solid #333333;
+  border-left: 1px solid #CCCCCC;
+}
+  
+/* ######################################UPLOAD PAGE########################################### */
+.search-bar{
+  border-radius: 30px;
+}
+
+input#searchBar {
+  width: 50%;
+  font-size: 1.6rem;
+}
+
+input {
+  width: 100%;
+  /* padding: 8px 25px; */
+  margin: 4px 0;
+  font-size: 16px;
+}
+
+input {
+  width: 100%;
+  padding: 8px 25px;
+  margin: 6px 0;
+}
+
+#submit-btn {
+  background-color: white;
+  font-size: 1.2rem;
+  width: 103%;
+  margin-left: -14px;
+  margin-top:10px;
+  }
+
+#submit-btn:hover{
+  background-color: #A0AAB2;
+  color: white;
+}
+
+#autocomplete{
+  font-size: 1.2rem;
+}
+  
+#image-form{
+  font-size: 1.2rem;
+}
+
+.form-group-row{
+  font-size: 1.2rem;
+}
+
+.image-form {
+display: none;
+width: 43.9%;
+margin: 20px auto;
+}
+  
+#image-uploader input[type="file"] {
+padding:0;
+margin-left: 0px;
+/* display: none; */
+color:white;
+font-size: 1.2rem;
+} 
+
+.image-btn {
+margin-left: -14px;
+margin-top:-5px;
+color: #455357;
+font-size: 1.2rem;
+}
+
+.add-image {
+  margin: 12px;
+  width: 100%;
+  color: white;
+  font-size: 1.2rem;
+  }
+
+.image-input {
+  font-size: 1.2rem;
+}
+      
+.imagetitle-btn{
+  border-radius: 25px;
+  font-size: 1.2rem;
+  }
+        
+#list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: -26px;
+  color: white;
+  font-size: 1.2rem;
+  }
