@@ -2,47 +2,33 @@
 
 {% block body %}
 
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="static/images/pic2.jpg" alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Subway Train</h5>
-    <p class="card-text">Shepard Fairey</p>
-    <a href="#" class="btn btn-primary">Location</a>
+<form>
+  <div class="form-group">
+    <div id="card-top" class="row justify-content-center">
+      <input type="text" class="form-control search-bar" name="searchBar" id="searchBar" placeholder="Search"/>
+    </div>
   </div>
+</form>
+
+<div class="container justify-content-center"></div>
+<div class="form-group p-5" id="allCards">
+  <div class="row">
+    {% for i in images %}
+    <div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="{{ i['image_url'] }}" alt="img of something">
+  <div class="card-body">
+    <h5 class="card-title">{{ i['image_title'] }}</h5>
+    <p class="card-text">{{ i['artist'] }}</p>
+    <a href="{{ i['location'] }}" class="btn btn-primary">Location</a>
+  </div>
+  {% endfor %}
+</div>
 </div>
 
-<!-- {% for i in image %}
-<div class="row">
-    <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-      <img
-        src="{{ i.url }}"
-        class="w-100 shadow-1-strong rounded mb-4"
-        alt=""
-      />
-  </div>
-  {% endfor %} -->
-
-<!-- <div class="row">
-    {% for i in image %}
-    <div class="column">
-    
-      <img src="{{ i.url }}">
-    {% endfor %}
-    </div>
-</div> -->
-
-<!-- {% for i in image %}
-  <div>
-    <div class="row">
-      <h2>{{ i.image_title }}</h2>
-    </div>
-
-    <div class="row">
-      <img src="{{ i.url }}" style="border: 1px solid #c2b831;" alt="Photo">
-    </div>
-  </div>
-{% endfor %} -->
 
 <script src="static/js/display.js"></script>
 
 {% endblock %}
+
+
+<!-- even if html is supposed to be easy, i dont know wtf i'm doing ever -->

@@ -10,15 +10,19 @@ input:focus, textarea:focus, select:focus{
   font-family: 'Spartan';
 }
 
+.nav-link {
+  color: black;
+  }
+
 /* ######################################NAV BAR########################################### */
 
 /* nav bar styling */
 .navbar-dark .navbar-nav .nav-link:hover {
-  color: white;
-  font-family: 'Spartan';font-size: 22px !important;
+  color: rgb(211, 211, 213);
   }
 
 .navbar{
+  color: black;
   padding: 1.5rem 2.5rem; 
 }
   
@@ -28,15 +32,6 @@ body {
   }
   
 /* ######################################HOME PAGE########################################### */
-
-/* aligns homepage background image */
-#bg {
-  position: fixed;
-  top: -96px;
-  left: 310px;
-  min-width: 39%;
-  min-height: 69%;
-}
 
 .login-page {
   display: flex;
@@ -69,7 +64,7 @@ body {
 
 .home-form input {
   outline: 1;
-  background: pink;
+  background: white;
   width: 100%;
   border: 0;
   margin: 0 0 6px;
@@ -83,38 +78,38 @@ body {
   width: 100%;
   border: 0;
   padding: 15px;
-  color: pink;
+  color: black;
   font-size: 14px;
   cursor: pointer;
 }
 
 .home-form button:hover, .form button:active {
-  background: pink;
-  color: orangered;
+  background: rgb(220, 220, 240);
+  color: black;
 }
 
 .register-submit{
-  background: pink;
-  color: orangered;
+  background: white;
+  color: black;
   text-transform: uppercase;
   outline: 0;
-  background: orange;
+  background: white;
   width: 100%;
   border: 0;
   padding: 10px;
-  color: orangered;
+  color: black;
   font-size: 14px;
   cursor: pointer;
 }
 
 .home-form .message {
   margin: 15px 0 0;
-  color: rgba(255, 255, 255, 0.311);
+  color: white;
   font-size: 12px;
 }
 
 .home-form .message a {
-  color: rgb(189, 218, 190);
+  color: rgb(58, 87, 162);
   text-decoration: none;
 }
 
@@ -122,26 +117,15 @@ body {
   display: none;
 }
 
-.login-button {
-  font: bold 11px;
-  text-decoration: none;
-  background-color: pink;
-  color: pink;
-  padding: 2px 6px 2px 6px;
-  border-top: 1px solid #CCCCCC;
-  border-right: 1px solid #333333;
-  border-bottom: 1px solid #333333;
-  border-left: 1px solid #CCCCCC;
-}
-  
 /* ######################################UPLOAD PAGE########################################### */
-.search-bar{
-  border-radius: 30px;
-}
+
+/* .search-bar{
+
+} */
 
 input#searchBar {
   width: 50%;
-  font-size: 1.6rem;
+  font-size: 1.3rem;
 }
 
 input {
@@ -166,7 +150,7 @@ input {
   }
 
 #submit-btn:hover{
-  background-color: #A0AAB2;
+  background-color: rgb(58, 87, 162);
   color: white;
 }
 
@@ -191,22 +175,21 @@ margin: 20px auto;
 #image-uploader input[type="file"] {
 padding:0;
 margin-left: 0px;
-/* display: none; */
-color:white;
+color:black;
 font-size: 1.2rem;
 } 
 
 .image-btn {
 margin-left: -14px;
 margin-top:-5px;
-color: #455357;
+color: black;
 font-size: 1.2rem;
 }
 
 .add-image {
   margin: 12px;
   width: 100%;
-  color: white;
+  color: black;
   font-size: 1.2rem;
   }
 
@@ -223,6 +206,33 @@ font-size: 1.2rem;
   list-style: none;
   padding-left: 0;
   margin-left: -26px;
-  color: white;
+  color: black;
   font-size: 1.2rem;
   }
+
+  input {
+    width: 100%;
+    /* padding: 8px 25px; */
+    margin: 4px 0;
+    font-size: 16px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px 25px;
+    margin: 6px 0;
+    
+  }
+
+  .upload-art {
+    width: 43.9%;
+    margin: 20px auto;
+    }
+
+    #submit-btn {
+      background-color: white;
+      font-size: 1.2rem;
+      width: 105%;
+      margin-left: -14px;
+      margin-top:10px;
+      }

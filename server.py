@@ -75,11 +75,13 @@ def image():
     if 'user_id' not in session:
         return redirect('/')
     user_id = session['user_id']
-    url = request.json.get('url')
     image_title = request.json.get('image_title')
-    location = request.json.get('location')
     artist = request.json.get('artist')
-    image_obj = crud.create_image(user_id, image_title, url, location, artist)
+    location = request.json.get('location')
+    image_url = request.json.get('image_url')
+
+    image_obj = crud.create_image(user_id, image_title, artist, location, image_url)
+    
     return jsonify({'completed': True})
 
 ##################################UPLOAD CLOUDINARY##################################
@@ -119,7 +121,9 @@ def gallery():
     if 'user_id' not in session:
         return redirect("/")
     user = crud.get_user_by_id(session['user_id'])
-    return render_template('gallery.html')
+    images = crud.get_image_by_user(user.user_id)
+    
+    return render_template('gallery.html', user=user, images=images)
 
 #######################LOGOUT###############################################
 

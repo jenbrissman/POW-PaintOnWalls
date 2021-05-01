@@ -23,10 +23,10 @@ def get_user_by_id(user_id):
 
 ###########################IMAGE#######################################
 
-def create_image(user_id, image_title, location, url, artist):
+def create_image(user_id, image_title, artist, location, image_url):
     """Creates and returns image"""
     image = Image(user_id=user_id,
-                  image_title=image_title, url=url, location=location, artist=artist)
+                  image_title=image_title, artist=artist, location=location, image_url=image_url)
     db.session.add(image)
     db.session.commit()
     return image

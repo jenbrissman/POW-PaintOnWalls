@@ -32,16 +32,17 @@ class Image(db.Model):
     image_id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'))
     image_title = db.Column(db.String)
-    url = db.Column(db.String)
-    location = db.Column(db.String)
     artist = db.Column(db.String)
+    location = db.Column(db.String)
+    image_url = db.Column(db.String)
+    
 
     user = db.relationship('User')
 
     def __repr__(self):
         """Display info about image"""
 
-        return f'<Image image_id={self.image_id}, image_title={self.image_title}, url={self.url}, location={self.location}, artist={self.artist}>'
+        return f'<Image image_id={self.image_id}, image_title={self.image_title}, artist={self.artist}, location={self.location}, image_url={self.image_url}>'
 
 ########################################################################
 

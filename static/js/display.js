@@ -50,8 +50,10 @@ async function addImage() {
         let flask_resp = await fetch('/submit-image', {
             method: "POST",
             body: JSON.stringify({
-                "url": cloud_res_json.url,
-                "image_title": $(`#image-title-${i+1}`).val()
+                'artist': $('#artist').val(),
+                "image_url": cloud_res_json.url,
+                'location': $('#autocomplete').val(),
+                'image_title': $('#image_title').val(),
             }),
             headers: {
                 'Accept': 'application/json',
@@ -74,12 +76,6 @@ const form = document.querySelector(".upload-art");
 
 form.addEventListener("submit", (evt) => {
     evt.preventDefault();
-    // here, we are getting the user input   
-    const input = {
-        'location': $('#autocomplete').val(),
-        'url': $('#url').val(),
-        'image_title': $('#image_title').val(),
-    };
     addImage()
         })
         
