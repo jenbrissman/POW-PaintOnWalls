@@ -1,8 +1,14 @@
+import os
+from flask_sqlalchemy import SQLAlchemy
 from server import app
 from unittest import TestCase
 from flask import session
-import model
-# from test_seed import *
+from model import *
+from test_seed import *
+
+import os
+import tempfile
+import pytest
 
 class PowTests(TestCase):
     """Tests Pow site"""
@@ -24,8 +30,8 @@ class PowTests(TestCase):
     #     """Tests page that displays upload image form"""
 
     #     result = self.client.get('/upload')
-    #     # self.assertEqual(result.status_code, 200)
-    #     self.assertIn(b'name="submit">SUBMIT', result.data)
+    #     self.assertEqual(result.status_code, 200)
+    #     self.assertIn(b'enctype="multipart/form-data', result.data)
 
 
 class TestPowDatabase(TestCase):
@@ -37,24 +43,7 @@ class TestPowDatabase(TestCase):
         self.client = app.test_client()
         app.config['TESTING'] = True
 
-        connect_to_db(app, db_uri='postgresql:///testdb')
 
-        db.create_all()
-        test_data()
-
-    def test_home(self):
-        """Tests homepage"""
-
-        result = self.client.get('/')
-        self.assertEqual(result.status_code, 200)
-        self.assertIn(b'<p class="message"> Not registered?', result.data)
-
-    def tearDown(self):
-        """Code to run after every test"""
-
-        db.session.remove()
-        db.drop_all()
-        db.engine.dispose()
 
 if __name__ == '__main__': 
     import unittest
