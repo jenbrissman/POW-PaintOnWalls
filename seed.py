@@ -73,31 +73,38 @@ jb_8 = crud.create_image(user_id=1,
                         image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619934537/occpxh9tpozbzrzanp64.jpg",
                         artist="Martin Whatson")
 
+jb_9 = crud.create_image(user_id=1,
+                        image_title="KAWS Mural                      ",
+                        location="Brooklyn Academy of Music, Lafayette Avenue, Brooklyn, NY, USA",
+                        image_url=" http://res.cloudinary.com/jenbrissman/image/upload/v1619971024/btc4r9g87m80zborsx6t.jpg",
+                        artist="KAWS")
 
-# jb_9 = crud.create_image(user_id=1,
-#                         image_title="Favorite Image Ever",
-#                         location="123 Main Street",
-#                         image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619895594/imdb23bcwvo7xu1f7ldy.jpg",
-#                         artist="Shepard Fairey")
+jb_10 = crud.create_image(user_id=1,
+                        image_title="The Natural State",
+                        location="Fort Chaffee, Fort Smith, AR, USA",
+                        image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619971314/qwgb9dnwj7lnzodipzqb.png",
+                        artist="DabsMyla")
 
+jb_11 = crud.create_image(user_id=1,
+                        image_title="Vetri Cucina - Secret Stairwell",
+                        location="Palms Casino Resort, West Flamingo Road, Las Vegas, NV, USA",
+                        image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619971525/rkjdezuoqpc4jhqbi6mk.png",
+                        artist="DabsMyla")
 
+jb_12 = crud.create_image(user_id=2,
+                        image_title="Buffalo-Skeleton",
+                        location = "Lexington, KY, USA",
+                        image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619972000/ydu5wgtsq3oulhafzv5o.jpg",
+                        artist="ROA")
 
-# jb_10 = crud.create_image(user_id=1,
-#                         image_title="Favorite Image Ever",
-#                         location="123 Main Street",
-#                         image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619895594/imdb23bcwvo7xu1f7ldy.jpg",
-#                         artist="Shepard Fairey")
+jb_12 = crud.create_image(user_id=2,
+                        image_title="Super Nurse!",
+                        location = "Amsterdam, Netherlands",
+                        image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619972421/wnd4xulrydirrfguy0lg.jpg",
+                        artist="FAKE")
 
-# jb_11 = crud.create_image(user_id=1,
-#                         image_title="Favorite Image Ever",
-#                         location="123 Main Street",
-#                         image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619895594/imdb23bcwvo7xu1f7ldy.jpg",
-#                         artist="Shepard Fairey")
-
-
-
-# sm_m = crud.create_image(user_id=2,
-#                         image_title="Sean Street",
-#                         location = "555 Sean",
-#                         image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619895594/imdb23bcwvo7xu1f7ldy.jpg",
-#                         artist="Kaws")
+jb_12 = crud.create_image(user_id=2,
+                        image_title="Mobile Lovers",
+                        location = "Bristol, UK",
+                        image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619972639/eumoj4xfkehqc3dseavw.jpg",
+                        artist="Banksy")
