@@ -27,11 +27,11 @@ sm = crud.create_user(first_name="Sean",
 jb_m = crud.create_image(user_id=1,
                         image_title="Favorite Image Ever",
                         location="123 Main Street",
-                        image_url="http://res.cloudinary.com/followspotapp/image/upload/v1617853423/nhzyx0asj1272aqkjlx5.jpg",
+                        image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619895594/imdb23bcwvo7xu1f7ldy.jpg",
                         artist="Shepard Fairey")
 
 sm_m = crud.create_image(user_id=2,
                         image_title="Sean Street",
                         location = "555 Sean",
-                        image_url="http://res.cloudinary.com/followspotapp/image/upload/v1617853423/nhzyx0asj1272aqkjlx5.jpg",
+                        image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1619895594/imdb23bcwvo7xu1f7ldy.jpg",
                         artist="Kaws")

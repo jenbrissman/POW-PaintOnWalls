@@ -10,147 +10,44 @@ input:focus, textarea:focus, select:focus{
   font-family: 'Spartan';
 }
 
-.nav-link {
-  color: black;
-  }
-
 /* ######################################NAV BAR########################################### */
 
 /* nav bar styling */
-.navbar-dark .navbar-nav .nav-link:hover {
-  color: rgb(211, 211, 213);
+.navbar-light .navbar-nav .nav-link:hover {
+  color: rgb(255, 170, 42);
   }
 
 .navbar{
   color: black;
-  padding: 1.5rem 2.5rem; 
-}
-  
-  /* size for nav bar */
-body {
+  padding: 1.5rem 2.5rem;
   font-size: 1.6rem;
-  }
-  
-/* ######################################HOME PAGE########################################### */
-
-.login-page {
-  display: flex;
-  width: 100vw;
-  height: 100vh;
-  justify-content: center;
-  align-items: flex-end;
-}
-
-.login-page .home-form {
-  margin-bottom: 220px;
-  margin-right: 100px;
-}
-
-.home-form {
-  position: relative;
-  z-index: 1;
-  max-width: 360px;
-  text-align: center;
-}
-
-.table .feed {
-  position: relative;
-  z-index: 1;
-  max-width: 360px;
-  margin: 0 auto 100px;
-  padding: 45px;
-  text-align: center;
-}
-
-.home-form input {
-  outline: 1;
-  background: white;
-  width: 100%;
-  border: 0;
-  margin: 0 0 6px;
-  font-size: 16px;
-}
-
-.home-form button {
-  text-transform: uppercase;
-  outline: 0;
-  background: white;
-  width: 100%;
-  border: 0;
-  padding: 15px;
-  color: black;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.home-form button:hover, .form button:active {
-  background: rgb(220, 220, 240);
-  color: black;
-}
-
-.register-submit{
-  background: white;
-  color: black;
-  text-transform: uppercase;
-  outline: 0;
-  background: white;
-  width: 100%;
-  border: 0;
-  padding: 10px;
-  color: black;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.home-form .message {
-  margin: 15px 0 0;
-  color: white;
-  font-size: 12px;
-}
-
-.home-form .message a {
-  color: rgb(58, 87, 162);
-  text-decoration: none;
-}
-
-#register-form {
-  display: none;
 }
 
 /* ######################################UPLOAD PAGE########################################### */
 
-/* .search-bar{
-
-} */
-
-input#searchBar {
+#searchBar {
   width: 50%;
   font-size: 1.3rem;
-}
-
-input {
-  width: 100%;
-  /* padding: 8px 25px; */
-  margin: 4px 0;
-  font-size: 16px;
+  border-radius: 5px;
 }
 
 input {
   width: 100%;
   padding: 8px 25px;
-  margin: 6px 0;
+  font-size: 22px 0px;
+  margin: 22px 0;
 }
 
 #submit-btn {
-  background-color: white;
+  background-color: rgb(230, 230, 230);;
   font-size: 1.2rem;
-  width: 103%;
+  width: 105%;
   margin-left: -14px;
   margin-top:10px;
   }
 
 #submit-btn:hover{
-  background-color: rgb(58, 87, 162);
+  background-color: rgb(255, 170, 42);
   color: white;
 }
 
@@ -210,29 +107,198 @@ font-size: 1.2rem;
   font-size: 1.2rem;
   }
 
-  input {
-    width: 100%;
-    /* padding: 8px 25px; */
-    margin: 4px 0;
-    font-size: 16px;
-  }
-  
-  input {
-    width: 100%;
-    padding: 8px 25px;
-    margin: 6px 0;
-    
-  }
-
   .upload-art {
     width: 43.9%;
     margin: 20px auto;
     }
 
-    #submit-btn {
-      background-color: white;
-      font-size: 1.2rem;
-      width: 105%;
-      margin-left: -14px;
-      margin-top:10px;
+
+    /* ################################GALLERY############################################ */
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .flip-card {
+      background-color: transparent;
+      width: 450px;
+      height: 450px;
+      perspective: 1000px;
+    }
+    
+    .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.6s;
+      transform-style: preserve-3d;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+    
+    .flip-card-front, .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+    }
+    
+    .flip-card-front {
+      background-color: #bbb;
+      color: black;
+    }
+    
+    .flip-card-back {
+      background-color: orange;
+      color: white;
+      transform: rotateY(180deg);
+    }
+    
+    h1 {
+        font-size: 1.7;
+    }
+    
+    #card-contents {
+        margin-top: 150px;
+    }
+
+    
+      
+      .login-page {
+      display: flex;
+      width: 100vw;
+      height: 100vh;
+      justify-content: center;
+      align-items: flex-end;
+      }
+      
+      .login-page .home-form {
+      margin-bottom: 220px;
+      margin-right: 100px;
+      }
+      
+      .home-form {
+      position: relative;
+      z-index: 1;
+      max-width: 360px;
+      text-align: center;
+      }
+      
+      .home-form input {
+      outline: 1;
+      background:whitesmoke;
+      width: 95%;
+      border: 0;
+      margin: 2px 0 6px;
+      font-size: 20px;
+      border-radius: 25px;
+      }
+      
+      .home-form input[type="text" i] {
+        text-transform: uppercase;
+        outline: 0;
+        background: white;
+        width: 90.5%;
+        border: 0;
+        padding: 15px;
+        color: black;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 25px;
+        font-family: 'Arial';
+        }
+      
+      input[type="password" i] {
+        text-transform: uppercase;
+        outline: 0;
+        background: white;
+        width: 90.5%;
+        border: 0;
+        padding: 15px;
+        color: black;
+        font-size: 14px;
+        cursor: pointer;
+        border-radius: 25px;
+        font-family: 'Arial';
+        }
+      
+      .home-form button {
+      text-transform: uppercase;
+      outline: 0;
+      background: white;
+      width: 98.5%;
+      border: 0;
+      padding: 15px;
+      color: black;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 25px;
+      font-family: 'Arial';
+      }
+      
+      .home-form button:hover, .form button:active {
+      background: rgb(255, 88, 16);
+      color: white;
+      }
+      
+      .register-submit{
+      background: white;
+      color: black;
+      text-transform: uppercase;
+      outline: 0;
+      background: white;
+      width: 103.5%;
+      border: 10px;
+      padding: 10px;
+      color: black;
+      font-size: 14px;
+      cursor: pointer;
+      }
+      
+      #register-btn{
+      text-transform: uppercase;
+      outline: 0;
+      background: white;
+      width: 98.5%;
+      border: 0;
+      padding: 15px;
+      color: black;
+      font-size: 14px;
+      cursor: pointer;
+      border-radius: 25px;
+      font-family: 'Arial';
+      }
+
+      #register-btn:hover {
+        background: rgb(255, 88, 16);
+        color: white;
+        }
+        
+
+
+      .home-form .message {
+      margin: 15px 0 0;
+      color: white;
+      font-size: 12px;
+      font-family: 'Arial';
+      font-weight: bold;
+      }
+      
+      .home-form .message a {
+      color: orangered;
+      text-decoration: none;
+      font-family: 'Arial';
+      border-radius: 25px;
+      font-weight: bold;
+      }
+      
+      #register-form {
+      display: none;
       }

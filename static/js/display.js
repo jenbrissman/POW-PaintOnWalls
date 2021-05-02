@@ -1,29 +1,29 @@
 "use strict";
 
-// #######################REGISTER AND LOGIN####################################
+// #######################LOGIN####################################
 
 $('.message a').click(function(){
-    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-    });
+  $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+  });
 
 $('#register-form').on('submit', (evt) => {
-    evt.preventDefault();
-    const formInputs = {
-        'first_name': $('#first_name').val(),
-        'last_name': $('#last_name').val(),
-        'email': $('#email').val(),
-        'password': $('#password').val(),
-    }
+  evt.preventDefault();
+  const formInputs = {
+      'first_name': $('#first_name').val(),
+      'last_name': $('#last_name').val(),
+      'email': $('#email').val(),
+      'password': $('#password').val(),
+  }
 
-    $('.flashes').empty()
+  $('.flashes').empty()
 
-    $.post('/api/register', formInputs, (res) => {
-        if (res != 'None') {
-            $('#display-message').text(`Hi ${res.first_name} ${res.last_name}! You have successfully created an account. Please Log In!`)
-        } else {
-            $('#display-message').text(`An account with the email ${res.email} already exists. Please try again with a different email`)
-        }
-    });
+  $.post('/api/register', formInputs, (res) => {
+      if (res != 'None') {
+          $('#display-message').text(`Hi ${res.first_name} ${res.last_name}! You have successfully created an account. Please Log In!`)
+      } else {
+          $('#display-message').text(`An account with the email ${res.email} already exists. Please try again with a different email`)
+      }
+  });
 });
 
 // #######################ADD IMAGE####################################
@@ -115,17 +115,19 @@ var placeSearch, autocomplete;
 
 // #######################SEARCH FEATURE####################################
 
-// const searchBar = document.getElementById('searchBar');
-// const text = document.getElementsByClassName("col-sm-6 col-lg-4 col-xl-3 p-3");
+const searchBar = document.getElementById('searchBar');
+const text = document.getElementsByClassName("col-sm-6 col-lg-4 col-xl-3 p-3");
 
-// function searchCards(queryString) {
-//     return Object.values(text).filter((t) => !t.outerText.toLowerCase().includes(queryString))
-// }
+function searchCards(queryString) {
+    // console.log(Object.values(text).filter((t) => !t.outerText.toLowerCase().includes(queryString)))
+    // console.log(Object.values(text).map((t) => console.log(t.outerText.toLowerCase())))
+    return Object.values(text).filter((t) => !t.outerText.toLowerCase().includes(queryString))
+}
 
-// searchBar.addEventListener('keyup', (evt) => {
-//     const searchString = evt.target.value;
-//     let searchResults = searchCards(searchString.toLowerCase())
-//     for (let i = 0; i < text.length; i++) {
-//         searchResults.includes(text[i]) ? text[i].style.display = "none" : text[i].style.display = "block"    
-//     }
-// });
+searchBar.addEventListener('keyup', (evt) => {
+    const searchString = evt.target.value;
+    let searchResults = searchCards(searchString.toLowerCase())
+    for (let i = 0; i < text.length; i++) {
+        searchResults.includes(text[i]) ? text[i].style.display = "none" : text[i].style.display = "block"    
+    }
+});
