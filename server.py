@@ -18,6 +18,9 @@ cloud_api_key = os.environ.get('cloud_api_key')
 cloud_api_secret = os.environ.get('cloud_api_secret')
 print(datetime.now())
 
+###INSTANTIATING DB
+connect_to_db(app)
+
 #################################HOME###########################################
 
 @app.route('/')
@@ -153,6 +156,12 @@ def logout():
 
 #################################RUN###################################################
  
+# from server import app
+#     connect_to_db(app)
+#     db.create_all()
+#     print('Connected to db!')
+
+
 if __name__ == '__main__':
     connect_to_db(app)
     app.run(host='0.0.0.0', port=5001, debug=True)
