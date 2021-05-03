@@ -49,7 +49,7 @@ Table of Contents
 
 ## <a name="#Logout"></a>Log Out
 
-![Logout](pow/static/images/logout.gif)
+![Logout](static/images/logout.GIF)
 
 ## <a name="#Data"></a>Data Model
 
