@@ -51,7 +51,7 @@ def login():
     if user_obj != None:
         if hashed(password) == user_obj.password:
             session['user_id'] = user_obj.user_id
-            return redirect('/upload')
+            return redirect('/gallery')
         else:
             flash('Incorrect password, please try again')
     else:
