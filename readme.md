@@ -53,7 +53,7 @@ Table of Contents
 
 ## <a name="#Data"></a>Data Model
 
-![SQLDBM](static/img/SQLDBM.png)
+![SQLDBM](pow/static/images/SQLDBM.png)
 
 ## <a name="#Install"></a>Install
 
