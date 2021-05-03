@@ -10,7 +10,6 @@ Table of Contents
 - [Testing](#Testing)
 - [About](#About)
 - [Features](#Features)
-[Login and Registration](#Login) [Gallery](#Gallery) [Location](#Location) [View](#View) [Upload Image](#Upload) [Logout](#Logout) [Database](#SQLDBM)
 - [Install](#Install)
 - [Meet the Developer](#Meet)
 - [Looking Ahead](#Future)
@@ -27,6 +26,7 @@ Table of Contents
 ## <a name="#About"></a>About
 
 ## <a name="#Features"></a>Features
+[Login](#Login) | [Gallery](#Gallery) | [Location](#Location) | [View](#View) | [Upload](#Upload) | [Logout](#Logout)| [Database](#SQLDBM)
 
 ## <a name="#Login"></a>Login and Registration
 
