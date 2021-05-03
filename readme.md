@@ -37,7 +37,7 @@ Table of Contents
 
 ## <a name="#Location"></a>Location
 
-![Location](pow/static/images/location.gif)
+![Location](static/images/location.gif)
 
 ## <a name="#View"></a>View Image
 
