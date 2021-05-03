@@ -17,13 +17,13 @@ $('#register-form').on('submit', (evt) => {
 
   $('.flashes').empty()
 
-  // $.post('/api/register', formInputs, (res) => {
-  //     if (res != 'None') {
-  //         $('#display-message').text(`Hi ${res.first_name} ${res.last_name}! You have successfully created an account. Please Log In!`)
-  //     } else {
-  //         $('#display-message').text(`An account with the email ${res.email} already exists. Please try again with a different email`)
-  //     }
-  // });
+  $.post('/api/register', formInputs, (res) => {
+      if (res != 'None') {
+          $('#display-message').text(`Hi ${res.first_name} ${res.last_name}! You have successfully created an account. Please Log In!`)
+      } else {
+          $('#display-message').text(`An account with the email ${res.email} already exists. Please try again with a different email`)
+      }
+  });
 });
 
 // #######################ADD IMAGE####################################

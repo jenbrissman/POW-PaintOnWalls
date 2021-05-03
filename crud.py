@@ -34,6 +34,10 @@ def create_image(user_id, image_title, artist, location, image_url):
 def get_image_by_user(user_id):
     return Image.query.filter_by(user_id=user_id).all()
 
+def get_all_images():
+    return Image.query.all()
+
+
 ##########################RUN##############################################
 
     connect_to_db(app)

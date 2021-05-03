@@ -115,15 +115,30 @@ def cld_optimize():
 
 #########################GALLERY####################################################
 
-@app.route('/gallery')
-def gallery():
-    """Lets users view and interact with gallery"""
+@app.route('/mygallery')
+def my_gallery():
+    """Lets users view and interact with their OWN gallery"""
     if 'user_id' not in session:
         return redirect("/")
     user = crud.get_user_by_id(session['user_id'])
     images = crud.get_image_by_user(user.user_id)
     
     return render_template('gallery.html', user=user, images=images)
+
+
+@app.route('/gallery')
+def gallery():
+    """Lets users view and interact with gallery"""
+    if 'user_id' not in session:
+        return redirect("/")
+    user = crud.get_user_by_id(session['user_id'])
+    all_images = crud.get_all_images()
+    print("hello!!!")
+    print(all_images)
+    
+    return render_template('gallery.html', user=user, images=all_images)
+
+
 
 #######################LOGOUT###############################################
 
