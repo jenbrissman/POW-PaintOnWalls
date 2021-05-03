@@ -12,24 +12,23 @@
 
 <div class="row">
 {% for i in images %}
-<div class="column">
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="{{ i['image_url'] }}" alt="Image goes here" style="width:450px;height:450px;">
-    </div>
-    <div class="flip-card-back">
-        <div id="card-contents">
-      <h1>{{ i['image_title'] }}</h1> 
-      <p>{{ i['artist'] }}</p> 
-      <a href="http://maps.google.com/?q={{ i['location'] }}" class="btn btn-light">Location</a>
-      <a href="{{ i['image_url'] }}" class="btn btn-light">View Image</a>
+  <div class="column">
+    <div class="flip-card">
+      <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img src="{{ i['image_url'] }}" alt="Image goes here" style="width:450px;height:450px;">
+          </div>
+            <div class="flip-card-back">
+              <div id="card-contents">
+                <h1>{{ i['image_title'] }}</h1> 
+                <p>{{ i['artist'] }}</p> 
+                <a href="http://maps.google.com/?q={{ i['location'] }}" class="btn btn-light">Location</a>
+                <a href="{{ i['image_url'] }}" class="btn btn-light">View Image</a>
+              </div>
+            </div>
+      </div>
     </div>
   </div>
-</div>
-</div>
-</div>
-
 {% endfor %}
 </div>
 

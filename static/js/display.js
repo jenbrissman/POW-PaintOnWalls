@@ -17,13 +17,13 @@ $('#register-form').on('submit', (evt) => {
 
   $('.flashes').empty()
 
-  $.post('/api/register', formInputs, (res) => {
-      if (res != 'None') {
-          $('#display-message').text(`Hi ${res.first_name} ${res.last_name}! You have successfully created an account. Please Log In!`)
-      } else {
-          $('#display-message').text(`An account with the email ${res.email} already exists. Please try again with a different email`)
-      }
-  });
+  // $.post('/api/register', formInputs, (res) => {
+  //     if (res != 'None') {
+  //         $('#display-message').text(`Hi ${res.first_name} ${res.last_name}! You have successfully created an account. Please Log In!`)
+  //     } else {
+  //         $('#display-message').text(`An account with the email ${res.email} already exists. Please try again with a different email`)
+  //     }
+  // });
 });
 
 // #######################ADD IMAGE####################################
@@ -116,7 +116,7 @@ var placeSearch, autocomplete;
 // #######################SEARCH FEATURE####################################
 
 const searchBar = document.getElementById('searchBar');
-const text = document.getElementsByClassName("col-sm-6 col-lg-4 col-xl-3 p-3");
+const text = document.getElementsByClassName("card-contents");
 
 function searchCards(queryString) {
     // console.log(Object.values(text).filter((t) => !t.outerText.toLowerCase().includes(queryString)))
