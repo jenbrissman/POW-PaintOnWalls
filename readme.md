@@ -10,6 +10,7 @@ Table of Contents
 - [Testing](#Testing)
 - [About](#About)
 - [Features](#Features)
+[Login and Registration](#Login) [Gallery](#Gallery) [Location](#Location) [View](#View) [Upload Image](#Upload) [Logout](#Logout) [Database](#SQLDBM)
 - [Install](#Install)
 - [Meet the Developer](#Meet)
 - [Looking Ahead](#Future)
