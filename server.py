@@ -4,13 +4,13 @@ import crud
 import os
 import cloudinary.uploader
 import cloudinary.api
+from project import create_app
 from datetime import datetime
 from cloudinary.utils import cloudinary_url
 from flask_cors import CORS, cross_origin
 from model import connect_to_db, db, User, Image 
 from hashlib import sha256
 
-app = Flask(__name__)
 CORS(app)
 app.secret_key = "jenbrissman"
 cloud_name = os.environ.get('cloud_name')
@@ -19,7 +19,8 @@ cloud_api_secret = os.environ.get('cloud_api_secret')
 print(datetime.now())
 
 ###INSTANTIATING DB
-connect_to_db(app)
+# app = Flask(__name__)
+# connect_to_db(app)
 
 #################################HOME###########################################
 
