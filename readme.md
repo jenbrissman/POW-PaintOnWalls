@@ -1,4 +1,4 @@
-![Pow](static/images/pow_small2.png "Pow")
+![Pow](static/images/powheader.png "Pow")
 
 by [Jen Brissman](https://www.linkedin.com/in/jenbrissman/) | [brissman514@gmail.com](mailto:brissman514@gmail.com?subject=[GitHub]%20Pow) | [Watch the demo!](https://www.youtube.com/) | [Shopify Backend Intern Challenge](https://docs.google.com/document/d/1ZKRywXQLZWOqVOHC4JkF3LqdpO3Llpfk_CkZPR8bjak/edit#heading=h.n7bww7g70ipk)
 
