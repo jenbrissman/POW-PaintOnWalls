@@ -75,6 +75,43 @@ I really loved making this app. It was my first experience creating a public com
 
 ## <a name="#Install"></a>Install
 
+### Running POW
+
+1. Clone this repository:
+```shell
+git clone https://github.com/jenbrissman/POW-PaintOnWalls.git
+```
+
+***Optional***: Create and activate a virtual environment:
+```shell
+pip3 install virtualenv
+virtualenv env
+source env/bin/activate
+```
+
+2. Install dependencies: 
+```shell
+pip3 install -r requirements.txt
+```
+
+3. Create environmental variables to hold your API keys in a `secrets.sh` file. You'll need to create your own Twilio and Cloudinary API keys:
+```
+export cloud_name="create your own cloudindary name/account"
+export cloud_api_key="once you do this they will provide you a key which you will put here"
+export cloud_api_secret="use your own secret of course, shhh"
+```
+
+4. Create your database & seed sample data:
+```shell
+createdb pow
+python3 seed.py
+```
+
+5. Run the app on localhost:
+```shell
+source secrets.sh
+python3 server.py
+
 ## <a name="#Meet"></a>Meet the Developer
 Jen is an adventurous world traveler who enjoys mountain biking, snowboarding, running, scuba diving, cooking/baking, and is happiest in hiking boots. Recently she held the position of Senior Operations Manager at a private investment office in New York City, where she was promoted twice within the company 2013 to 2021. Jen has also worked in lifestyle management at Luxury Attaché, and as a professional organizer/productivity consultant at DwellWell. 
 In addition to this, she has also had a successful career as a theatre, tv, film, voiceover, commercial actress and model in New York City, and holds a BFA from the UC Conservatory of Music, which accepts only the top 1% of applicants. 
