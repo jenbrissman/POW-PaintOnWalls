@@ -46,12 +46,12 @@ Clicking on the "location" button opens Google Maps to show exactly where that p
 ## <a name="#View"></a>View Image
 Clicking on the "view image" button opens a full size view of the particular piece of art.
 
-![View](static/images/view.gif)
+![Search](static/images/view.gif)
 
 ## <a name="#Search"></a>Search
 To filter through the cards, I developed a search feature by adding a JavaScript event listener that evaluates keystrokes to hide the cards that do not contain text matching the query string.
 
-![Search](static/images/view.GIF)
+![View](static/images/search.gif)
 
 ## <a name="#Upload"></a>Upload Image
 To upload a photo to the community library, I built a form which takes in the title, the artist, and the location using Google’s Map & Places API with their Place Autocomplete service. For the image file itself I implemented Cloudinary’s media management API, which returns the url for the image uploaded to my database.
@@ -79,4 +79,5 @@ I really loved making this app. It was my first experience creating a public com
 Jen is an adventurous world traveler who enjoys mountain biking, snowboarding, running, scuba diving, cooking/baking, and is happiest in hiking boots. Recently she held the position of Senior Operations Manager at a private investment office in New York City, where she was promoted twice within the company 2013 to 2021. Jen has also worked in lifestyle management at Luxury Attaché, and as a professional organizer/productivity consultant at DwellWell. 
 In addition to this, she has also had a successful career as a theatre, tv, film, voiceover, commercial actress and model in New York City, and holds a BFA from the UC Conservatory of Music, which accepts only the top 1% of applicants. 
 A tenacious multi-hyphenate, Jen is a driven and focused problem solver who has a knack for seeing the bigger picture in any situation. In this ever-changing world, her intuition has led her into an exciting new career in software development. She is a contributing member of Artists Who Code, an online community of artists in tech.
+
 Connect with [Jen Brissman](https://www.linkedin.com/in/jenbrissman/) on LinkedIn!
