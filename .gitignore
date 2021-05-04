@@ -3,5 +3,5 @@ secrets.sh
 __pycache__/
 venv/
 .coverage
-testing.py
+test.py
 test_seed.py    
