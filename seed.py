@@ -1,4 +1,5 @@
 import os
+import sys
 import json
 import crud
 import model
@@ -148,3 +149,4 @@ jb_20 = crud.create_image(user_id=1,
                         location = "Shoreditch, London, UK ",
                         image_url="http://res.cloudinary.com/jenbrissman/image/upload/v1620009871/ug1l9mofslh4clet40zi.jpg",
                         artist="Tavar Zawaki - Above")
+

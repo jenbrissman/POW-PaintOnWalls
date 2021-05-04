@@ -26,6 +26,7 @@ connect_to_db(app)
 @app.route('/')
 def show_home():
     """Shows homepage. Lets users with existing accounts login"""
+
     return render_template('home.html')
 
 #########################CREATE_AN_ACCOUNT######################################
@@ -156,11 +157,6 @@ def logout():
 
 #################################RUN###################################################
  
-# from server import app
-#     connect_to_db(app)
-#     db.create_all()
-#     print('Connected to db!')
-
 
 if __name__ == '__main__':
     connect_to_db(app)

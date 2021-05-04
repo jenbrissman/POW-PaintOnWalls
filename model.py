@@ -1,3 +1,4 @@
+import os
 from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 
@@ -46,15 +47,13 @@ class Image(db.Model):
 
 ########################################################################
 
-def connect_to_db(flask_app, db_uri='postgresql:///pow', echo=False):
-    flask_app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
+def connect_to_db(flask_app, echo=False, **kwargs):
+    flask_app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get("HEROKU_PRODUCTION_DB_URI", "postgresql:///pow")
     flask_app.config['SQLALCHEMY_ECHO'] = echo
     flask_app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
     db.app = flask_app
     db.init_app(flask_app)
-
-    print('Connected to the db!')
 
 if __name__ == '__main__':
     from server import app
