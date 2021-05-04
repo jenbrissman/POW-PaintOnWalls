@@ -2,7 +2,7 @@
 
 by [Jen Brissman](https://www.linkedin.com/in/jenbrissman/) | [brissman514@gmail.com](mailto:brissman514@gmail.com?subject=[GitHub]%20Pow) | [Watch the demo!](https://www.youtube.com/) | [Shopify Backend Intern Challenge](https://docs.google.com/document/d/1ZKRywXQLZWOqVOHC4JkF3LqdpO3Llpfk_CkZPR8bjak/edit#heading=h.n7bww7g70ipk)
 
-## <a name="#About"></a>About
+## <a name="#About"></a>What is POW?
 POW - otherwise known as “Paint on Walls” is a communal photo sharing platform for lovers of street art.
 
 ![DemoGIF](static/images/gallery.GIF "DemoGIF")
