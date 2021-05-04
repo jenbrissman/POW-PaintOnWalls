@@ -94,7 +94,7 @@ source env/bin/activate
 pip3 install -r requirements.txt
 ```
 
-3. Create environmental variables to hold your API keys in a `secrets.sh` file. You'll need to create your own Twilio and Cloudinary API keys:
+3. Create environmental variables to hold your API keys in a `secrets.sh` file. You'll need to create your own Cloudinary API keys:
 ```
 export cloud_name="create your own cloudindary name/account"
 export cloud_api_key="once you do this they will provide you a key which you will put here"
@@ -111,6 +111,7 @@ python3 seed.py
 ```shell
 source secrets.sh
 python3 server.py
+```
 
 ## <a name="#Meet"></a>Meet the Developer
 Jen is an adventurous world traveler who enjoys mountain biking, snowboarding, running, scuba diving, cooking/baking, and is happiest in hiking boots. Recently she held the position of Senior Operations Manager at a private investment office in New York City, where she was promoted twice within the company 2013 to 2021. Jen has also worked in lifestyle management at Luxury Attaché, and as a professional organizer/productivity consultant at DwellWell. 
