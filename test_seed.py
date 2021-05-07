@@ -6,7 +6,7 @@ from server import app
 def test_user():
     """Creates test user in test database"""
 
-    test_user = User(first_name = 'Jenny', last_name = 'Testman', email = 'test@test.com', password = 'shopify')
+    test_user = User(first_name = 'Jennifer', last_name = 'Testman', email = 'testing@testing.com', password = 'jenny')
     db.session.add(test_user)
     db.session.commit()
 

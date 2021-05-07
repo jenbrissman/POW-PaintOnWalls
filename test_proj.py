@@ -34,42 +34,50 @@ class PowTests(TestCase):
 class TestPowLoggedIn(TestCase):
     """Tests if a user is logged in correctly"""
 
+    @classmethod
     def setUp(self):
             """Code to run before every test."""
 
             self.client = app.test_client()
-            self.postgresql = testing.postgresql.Postgresql()
+            self.postgresql = testing.postgresql.Postgresql(name="testdb", port=7654)
             
-    with testing.postgresql.Postgresql() as postgresql:
-        # connect to PostgreSQL
-        engine = create_engine(postgresql.url())
-        testdb = psycopg2.connect(**postgresql.dsn())
+            engine = create_engine(self.postgresql.url())
 
-        app.config['TESTING'] = True
-        connect_to_db(app, db_uri=testdb)
-        # connect_to_db(app, db_uri="postgresql:///testdb")
-        db.create_all()
-        test_user()
-        test_image()
+            app.config['TESTING'] = True
+            # connect_to_db(app, db_uri=testdb)
+            connect_to_db(app, db_uri="postgresql:///testdb")
+            db.create_all()
+            print("HEY!!!!!!!!! DID THIS WORK??")
+            test_user()
+            test_image()
 
-        with self.client as client:
-                    with client.session_transaction() as sess:
-                        sess['user_id'] = 1
+            with self.client as c:
+                        with c.session_transaction() as session:
+                            session['user_id'] = 1
 
     def test_upload(self):
             """Tests page that displays upload image form"""
-
-            result = self.client.get('/upload')
-            self.assertEqual(result.status_code, 200)
-            self.assertIn(b'id="upload-art"', result.data)
+            with self.client as c:
+                result = c.get('/upload')
+                self.assertEqual(result.status_code, 200)
+                self.assertIn(b'id="upload-art"', result.data)
+                
 
     def test_logout(self):
         """Tests if user gets logged out of session"""
+        with self.client as c:
+            with c.session_transaction() as session:
+                session["user_id"]=1
+            result = c.get('/logout', follow_redirects=True)
+                
+            self.assertNotIn(b'user_id', session)
 
+    @classmethod
     def tearDown(self):
             """Code to run after every test"""
             
             db.session.remove()
+            print("hey i'm here!!!!!!!!!")
             db.drop_all()
             db.engine.dispose()
 
