@@ -27,7 +27,7 @@ Table of Contents
 
 For my tests, I used [Coverage.py](https://coverage.readthedocs.io/en/coverage-5.5/) as it allows you to see your test coverage.
 
-1. To run coverage, run this command:: 
+1. To run coverage, run this command:
 ```shell
 $ coverage run -m unittest discover.
 ```
