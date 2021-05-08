@@ -2,7 +2,7 @@
 
 by [Jen Brissman](https://www.linkedin.com/in/jenbrissman/) | [brissman514@gmail.com](mailto:brissman514@gmail.com?subject=[GitHub]%20Pow) | [Shopify Backend Intern Challenge](https://docs.google.com/document/d/1ZKRywXQLZWOqVOHC4JkF3LqdpO3Llpfk_CkZPR8bjak/edit#heading=h.n7bww7g70ipk) | [POW Demo Video](https://www.youtube.com/watch?v=alTthz7xCLs)
 
-## <a name="#About"></a>What is POW? [POW Demo Video](https://www.youtube.com/watch?v=alTthz7xCLs)
+## <a name="#About"></a>What is POW? - [Demo Video](https://www.youtube.com/watch?v=alTthz7xCLs)
 POW - otherwise known as “Paint on Walls” is a communal photo sharing platform for lovers of street art. I built this application for the Shopify Internship Backend Challenge 2021.
 
 ![DemoGIF](static/images/gallery.GIF "DemoGIF")
