@@ -113,7 +113,7 @@ export cloud_api_key="once you do this they will provide you a key which you wil
 export cloud_api_secret="use your own secret of course, shhh"
 ```
 Here are some relevant docs for creating and set up an account with Cloudinary:
-[Create account](https://cloudinary.com/users/register/free)
+[Create account](https://cloudinary.com/users/register/free) | 
 [Get API Key and Secret](https://cloudinary.com/documentation/how_to_integrate_cloudinary)
 
 
