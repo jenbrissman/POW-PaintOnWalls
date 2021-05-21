@@ -47,7 +47,6 @@ class TestPowLoggedIn(TestCase):
             # connect_to_db(app, db_uri=testdb)
             connect_to_db(app, db_uri="postgresql:///testdb")
             db.create_all()
-            print("HEY!!!!!!!!! DID THIS WORK??")
             test_user()
             test_image()
 
@@ -77,7 +76,6 @@ class TestPowLoggedIn(TestCase):
             """Code to run after every test"""
             
             db.session.remove()
-            print("hey i'm here!!!!!!!!!")
             db.drop_all()
             db.engine.dispose()
 
