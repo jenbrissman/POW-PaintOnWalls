@@ -10,7 +10,6 @@ import testing.postgresql
 from sqlalchemy import create_engine
 import psycopg2
 
-import os
 import tempfile
 import pytest
 
