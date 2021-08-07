@@ -134,6 +134,6 @@ A tenacious multi-hyphenate, I am a driven and focused problem solver who has a 
 
 I have also had a successful career as a theatre, television, film, voiceover, commercial actress and model in New York City. I hold a BFA from the highly competitive UC College-Conservatory of Music. This is one of the country's leading arts institutions which accepts only the top 1% of applicants.
 I am a proud, contributing member and co-founder of the mentorship program within Artists Who Code, an online community of artists in tech.
-In my free time, I am an adventurous world traveler who enjoys mountain biking, snowboarding, running, scuba diving, pickleball, cooking, and am happiest in hiking boots.
+In my free time, I am an adventurous world traveler who enjoys mountain biking, snowboarding, running, scuba diving, pickleball, cooking, and am happiest in hiking boots :)
 
 Connect with [Jen Brissman](https://www.linkedin.com/in/jenbrissman/) on LinkedIn!
