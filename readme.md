@@ -45,7 +45,7 @@ Users can register and create an account which will give them access to the publ
 ![Login](static/images/login.GIF)
 
 ## <a name="#Gallery"></a>Gallery
-After logging in, the user will be brought to the public street art gallery. This gallery represents the full database of photos uploaded by the POW community of users. Each photo is displayed on a responsive card that we have styled using Bootstrap and CSS. Hover over an image and the card flips to display information about the specific street art piece on the back. This information is being dynamically displayed using Jinja templating and includes the title and artist, as well as links to a full-size image of the piece, and its location.
+After logging in, the user will be brought to the public street art gallery. This gallery represents the full database of photos uploaded by the POW community. Each photo is displayed on a responsive card that we have styled using Bootstrap and CSS. Hover over an image and the card flips to display information about the specific street art piece on the back. This information is being dynamically displayed using Jinja templating and includes the title and artist, as well as links to a full-size image of the piece, and its location.
 
 ![Gallery](static/images/gallery.GIF)
 
