@@ -82,7 +82,7 @@ Clicking 'my pics' in the nav bar will apply a filter on the galley that shows o
 ![SQLDBM](static/images/SQLDBM.png)
 
 ## <a name="#Future"></a>Looking Ahead
-Moving forward, we want to implement Amazon’s Rekognition feature so that the search function can search characteristics of the images, not just a string search of the information in the database/information displayed on the cards. Thank you for taking the time to learn a bit about POW.
+Moving forward, we want to implement Amazon’s Rekognition feature so that the search function can search characteristics of the images, not just a string search of the information in the database/information displayed on the cards.
 
 ## <a name="#Install"></a>Install
 
