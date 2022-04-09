@@ -1,6 +1,6 @@
 ![POW](static/images/powheader.png "POW")
 
-by [Jen Brissman](https://www.linkedin.com/in/jenbrissman/) | [brissman514@gmail.com](mailto:brissman514@gmail.com?subject=[GitHub]%20Pow)
+by [Jen Brissman](https://www.linkedin.com/in/jenbrissman/) and [Sean Montgomery](https://www.linkedin.com/in/seandmontgomery/)| [brissman514@gmail.com](mailto:brissman514@gmail.com?subject=[GitHub]%20Pow) | [seandmontgomery@gmail.com](mailto:seandmontgomery@gmail.com?subject=[GitHub]%20Pow)
 
 ## <a name="#About"></a>What is POW? - [Demo Video](https://www.youtube.com/watch?v=alTthz7xCLs)
 POW - otherwise known as “Paint on Walls” is a communal photo sharing platform for lovers of street art.
@@ -13,7 +13,6 @@ Table of Contents
 - [Testing](#Testing)
 - [Features](#Features)
 - [Install](#Install)
-- [Meet the Developer](#Meet)
 - [Looking Ahead](#Future)
 
 ## <a name="#Tech"></a>Tech Stack
@@ -25,7 +24,7 @@ Table of Contents
 
 ## <a name="#Testing"></a>Testing
 
-For my tests, I used [Coverage.py](https://coverage.readthedocs.io/en/coverage-5.5/) as it allows you to see your test coverage.
+For our tests, we used [Coverage.py](https://coverage.readthedocs.io/en/coverage-5.5/) as it allows you to see your test coverage.
 
 1. To run coverage, run this command:
 ```shell
@@ -41,12 +40,12 @@ $ coverage report -m.
 [Login](#Login) | [Gallery](#Gallery) | [Location](#Location) | [View](#View) | [Search](#Search) | [Upload](#Upload) | [Logout](#Logout) | [Database](#SQLDBM)
 
 ## <a name="#Login"></a>Login and Registration
-Users can register and create an account which will give them access to the public street art gallery, as well as the option to upload photos of their own. I have hashed the user's credentials with sha256 to add security for the user. I built Pow with Flask - creating a service that uses a Postgres database interfaced with the SQLAlchemy ORM.
+Users can register and create an account which will give them access to the public street art gallery, as well as the option to upload photos of their own. We have hashed the user's credentials with sha256 to add security for the user. We built Pow with Flask - creating a service that uses a Postgres database interfaced with the SQLAlchemy ORM.
 
 ![Login](static/images/login.GIF)
 
 ## <a name="#Gallery"></a>Gallery
-After logging in, the user will be brought to the public street art gallery. This gallery represents the full database of photos uploaded by the POW community of users. Each photo is displayed on a responsive card that I have styled using Bootstrap and CSS. Hover over an image and the card flips to display information about the specific street art piece on the back. This information is being dynamically displayed using Jinja templating and includes the title and artist, as well as links to a full-size image of the piece, and its locatio   n.
+After logging in, the user will be brought to the public street art gallery. This gallery represents the full database of photos uploaded by the POW community. Each photo is displayed on a responsive card that we have styled using Bootstrap and CSS. Hover over an image and the card flips to display information about the specific street art piece on the back. This information is being dynamically displayed using Jinja templating and includes the title and artist, as well as links to a full-size image of the piece, and its location.
 
 ![Gallery](static/images/gallery.GIF)
 
@@ -61,12 +60,12 @@ Clicking on the "view image" button opens a full size view of the particular pie
 ![Search](static/images/view.gif)
 
 ## <a name="#Search"></a>Search
-To filter through the cards, I developed a search feature by adding a JavaScript event listener that evaluates keystrokes to hide the cards that do not contain text matching the query string.
+To filter through the cards, we developed a search feature by adding a JavaScript event listener that evaluates keystrokes to hide the cards that do not contain text matching the query string.
 
 ![View](static/images/search.gif)
 
 ## <a name="#Upload"></a>Upload Image
-To upload a photo to the community library, I built a form which takes in the title, the artist, and the location using Google’s Map & Places API with their Place Autocomplete service. For the image file itself I implemented Cloudinary’s media management API, which returns the url for the image uploaded to my database.
+To upload a photo to the community library, we built a form which takes in the title, the artist, and the location using Google’s Map & Places API with their Place Autocomplete service. For the image file itself we implemented Cloudinary’s media management API, which returns the url for the image uploaded to my database.
 
 ![Upload](static/images/upload.GIF)
 
@@ -83,7 +82,7 @@ Clicking 'my pics' in the nav bar will apply a filter on the galley that shows o
 ![SQLDBM](static/images/SQLDBM.png)
 
 ## <a name="#Future"></a>Looking Ahead
-I really loved making this app. It was my first experience creating a public community based application. Moving forward, I want to implement Amazon’s Rekognition feature so that the search function can search characteristics of the images, not just a string search of the information in the database/information displayed on the cards. Thank you for taking the time to learn a bit about POW, I really look forward to connecting with you!
+Moving forward, we want to implement Amazon’s Rekognition feature so that the search function can search characteristics of the images, not just a string search of the information in the database/information displayed on the cards.
 
 ## <a name="#Install"></a>Install
 
@@ -128,13 +127,3 @@ python3 seed.py
 source secrets.sh
 python3 server.py
 ```
-
-## <a name="#Meet"></a>Meet the Developer
-A tenacious multi-hyphenate, I am a driven and focused problem solver who has a knack for seeing the bigger picture in any situation. I currently work for Cloudinary as a Software Engineering Tutorial Producer. From 2013-2021, I was the Senior Operations Manager at a private investment office in NYC, where I was promoted twice within the company.
-
-I have also had a successful career as a theatre, television, film, voiceover, commercial actress and model in New York City. I hold a BFA from the highly competitive UC College-Conservatory of Music. This is one of the country's leading arts institutions which accepts only the top 1% of applicants.
-I am a proud, contributing member and co-founder of the mentorship program within Artists Who Code, an online community of artists in tech.
-
-In my free time, I am an adventurous world traveler who enjoys mountain biking, snowboarding, running, scuba diving, pickleball, cooking, and am happiest in hiking boots.
-
-Connect with [Jen Brissman](https://www.linkedin.com/in/jenbrissman/) on LinkedIn!
